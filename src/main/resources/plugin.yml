@@ -1,0 +1,21 @@
+name: FishBan
+version: 1.0
+depend: [FishDb,TerazPolska]
+main: pl.panryba.mc.ban.Plugin
+permissions:
+  fishban.manage:
+    description: allows ban management
+    default: op
+commands:
+  b:
+    description: Ban player
+    permission: fishban.manage
+    usage: /<command> <nick> [<reason>]
+  ub:
+    description: Unban player
+    permission: fishban.manage
+    usage: /<command> <nick>
+  tb:
+    description: Temporarily ban player
+    permission: fishban.manage
+    usage: /<command> <nick> <interval> [<reason>]
